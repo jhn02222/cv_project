@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+nav {
+    background-color: #333; 
+    color: white;  
+    width: 100%; 
+    height: 100px;   
+    gap: 20px;                
+}
+nav {
+    display: flex;  
+    justify-content: space-between;   
+    align-items: center;      
+}
+nav p {
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.contact {
+    border: 2px solid #007BFF;        /* Border color and thickness */
+    border-radius: 10px; 
+    padding: 10px;   
+    background-color: #f9f9f9;       /* Background color of the box */
+    color: #007BFF;   
+}
+
+.contact:hover {
+    background-color: #007BFF;       /* Change background color on hover */
+    color: #ffffff;  
+    text-decoration: none;
+}
+
+footer {
+    background-color: #b9ceee; 
+    color: white;           
+    bottom: 0;            
+    width: 100%;   
+}
+footer {
+    display: flex;             
+    justify-content: center;
+}
+h1 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 3em;                    
+    color: #eef3f8;     
+}
+
+.splash {
+   background-color: #78a4cb;
+   border-radius: 15px;       /* Rounded corners */
+   padding: 20px;  
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin: 20px;  
+    display: flex;                  /* Use flexbox for layout */
+    flex-direction: column;         /* Arrange children in a column */
+    align-items: center;            /* Center children horizontally */
+    text-align: center;   
+}
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Style for the element that will have the wave effect */
+.splash .wave-hover {
+    display: inline-block;         /* Necessary for the animation effect to work */
+    position: relative;
+    animation: wave 1s ease-in-out infinite; /* Apply the animation */
+}
+
+/* Add a hover effect if you want it to trigger on hover */
+.splash .wave-hover:hover {
+    animation: wave 0.5s ease-in-out infinite; /* Adjust duration for hover */
+}
+.splash img {
+    border: 5px solid #707f89;          /* Add a border with color and thickness */
+    border-radius: 50%;                /* Make the image round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+.splash img:hover {
+    transform: scale(1.1);                   /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow for a popping effect */
+}
+.splash .address, .splash .tag{
+    font-family: 'Times New Roman', sans-serif; /* Apply the same Google Font */
+    font-size: 1.2em;                 /* Slightly larger font size */
+    color: #4f4848;        
+}
+hr {
+    border: 0;                     /* Remove the default border */
+    border-bottom: 3px dashed #333;
+}
+h2 {
+    font-family: 'Lora', serif;  /* Apply the Google Font */
+    font-size: 2em;              /* Set a larger font size for headings */
+    color: #243f62;  
+    margin: 10px; 
+    text-align: center;
+}
+.education {
+    background-color: #78a4cb; /* Light color for the background */
+    padding: 20px;             /* Add padding inside the section */
+    border-radius: 8px;        /* Optional: rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+    color:#4f4848;
+}
+.degree-container {
+    display: flex;                /* Use Flexbox for alignment */
+    justify-content: space-between; /* Space between degree and date */
+    align-items: center;          /* Center align items vertically */
+}
+.date {
+    margin-left: 10px;            /* Add some space between the degree and date */
+    font-style: italic;           /* Optional: Style date differently */
+}
+.gpa {
+    text-align: right;
+}
+ul {
+    list-style-type: square;        /* Change the bullet type */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+}
+dl {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+}
+dt {
+    text-align: left; /* Align definition term to the left */
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em; 
+}
+
+dd {
+    text-align: right; /* Align definition description to the right */
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; 
+}
+a {
+    color:#264498;                 /* Blue color for links */
+    text-decoration: none;           /* Remove the default underline */
+}
+a:hover {
+    color: blue;                  /* Change to orange when hovered */
+    text-decoration: none;      /* Add underline on hover */
+}
+.awards {
+    background-color: #78a4cb; /* Light color for the background */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;        /* Optional: rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color:#4f4848;
+}
+.skills {
+    background-color: #78a4cb; /* Light color for the background */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;        /* Optional: rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color:#4f4848;
+}
+li {
+    margin-bottom: 10px;
+}
+.experience {
+    background-color: #78a4cb; /* Light color for the background */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;        /* Optional: rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color:#4f4848;
+}
+.three-col {
+    display: grid;                  /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px;                      /* Space between columns and rows */
+    margin: 0 auto;  
+}
+.three-col .img-container {
+    width: 400px;                /* Full width of the card */
+    height: 400px;             /* Fixed height for all images */
+    overflow: hidden;          /* Hide overflow to prevent distortion */
+    display: flex;
+    align-items: center;       /* Center the image vertically */
+    justify-content: center;  
+    border: 2px solid #333;
+    border-radius: 6px;
+}
+.three-col .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.three-col .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7194a9;    /* Light background color */
+    border: 1px solid #ddd;        /* Light border */
+    border-radius: 8px;            /* Rounded corners */
+    padding: 20px;                 /* Padding inside cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px;
+}
+.three-col .card:hover {
+    transform: scale(1.05);        /* Slightly scale up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+footer p {
+    margin: 10px;
+    font-size: 1.2em;
+    color: #264498;
+}
+
+.one-col {
+    display: flex;               /* Use flexbox for alignment */
+    flex-direction: column;      /* Arrange children in a column */
+    align-items: center;   
+}
+.contactHeader {
+    background-color: #78a4cb; /* Light color for the background */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;        /* Optional: rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color:#4f4848;
+    text-align: center;
+}
+.contactHeader .address {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.about {
+    border: 2px solid #007BFF;        /* Border color and thickness */
+    border-radius: 10px; 
+    padding: 10px;   
+    background-color: #f9f9f9;       /* Background color of the box */
+    color: #007BFF;   
+}
+.about:hover {
+    background-color: #007BFF;       /* Change background color on hover */
+    color: #ffffff;  
+    text-decoration: none;
+}
+form {
+    padding: 20px;                      /* Add padding inside the form container */
+    max-width: 600px;                   /* Limit the form width */
+    margin: 0 auto;                     /* Center the form on the page */
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;                        /* Make input boxes stretch horizontally */
+    padding: 12px;                      /* Add padding inside the input boxes */
+    border: 1px solid #ccc;             /* Light border */
+    border-radius: 8px;                 /* Rounded corners */
+    font-family: 'Roboto', sans-serif;  /* Set font family */
+    font-size: 1em;                     /* Set font size */
+    box-sizing: border-box;             /* Ensure padding doesn't affect total width */
+}
+
+/* Style the labels */
+label {
+    font-family: 'Roboto', sans-serif;  /* Set font family */
+    font-weight: bold;                  /* Make labels bold */
+    margin-top: 10px;                   /* Add space above the labels */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    width: 100%;                        /* Make the submit button stretch horizontally */
+    padding: 15px;                      /* Add more padding for larger size */
+    background-color: #007BFF;          /* Set background color */
+    color: white;                       /* White text */
+    border: none;                       /* Remove border */
+    border-radius: 8px;                 /* Rounded corners */
+    font-size: 1.2em;                   /* Slightly larger text */
+    font-family: 'Roboto', sans-serif;  /* Set font family */
+    cursor: pointer;                    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover animation for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;          /* Darker blue on hover */
+    transform: scale(1.05);             /* Slightly enlarge the button */
+}
+.contactFooter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 170px;
+}
